@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class Rectangle {
+    int length;
+    int width;
+
+    // Default Constructor
+    Rectangle() {
+        length = 0;
+        width = 0;
+    }
+
+    // Method to calculate area
+    int getArea() {
+        return length * width;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Rectangle r = new Rectangle();
+
+        // Input from user
+        System.out.print("Enter length: ");
+        r.length = sc.nextInt();
+
+        System.out.print("Enter width: ");
+        r.width = sc.nextInt();
+
+        // Output
+        System.out.println("Area of Rectangle = " + r.getArea());
+    }
+}
