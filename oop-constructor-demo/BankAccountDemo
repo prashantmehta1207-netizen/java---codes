@@ -1,0 +1,37 @@
+class BankAccount {
+    int accNo;
+    String name;
+    double balance;
+
+    // Method to set data
+    void setData(int a, String n, double b) {
+        accNo = a;
+        name = n;
+        balance = b;
+    }
+
+    // Method to display data
+    void display() {
+        System.out.println("Account Number: " + accNo);
+        System.out.println("Name: " + name);
+        System.out.println("Balance: " + balance);
+        System.out.println("---------------------------");
+    }
+}
+
+class BankAccountDemo {
+    public static void main(String[] args) {
+
+        // Creating two objects
+        BankAccount b1 = new BankAccount();
+        BankAccount b2 = new BankAccount();
+
+        // Setting data
+        b1.setData(101, "Prashant", 5000);
+        b2.setData(102, "Rahul", 8000);
+
+        // Displaying data
+        b1.display();
+        b2.display();
+    }
+}
