@@ -7,7 +7,7 @@ class Demo {
         hm.put(1, "Apple");
         hm.put(2, "Banana");
         hm.put(3, "Mango");
-
+        
         System.out.println(hm);
     }
 }
